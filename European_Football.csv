@@ -1,4 +1,4 @@
-index,Team,Season,Country,Played Matches,Home Matches,Away Matches,Wins,Home Wins,Away Wins,Draws,Loses,Point Per Game,League Position,performance_rank,Goals Scored,Goals Conceded,Home Goals,Away Goals,Shots,Fouls,Goals Per Match,Goals Conceded Per Match,Corners Per Match,Cards Per Match
+index,Team,Season,Country,Played Matches,Home Matches,Away Matches,Wins,Home Wins,Away Wins,Draws,Loses,Point Per Game,League Position,Rank,Goals Scored,Goals Conceded,Home Goals,Away Goals,Shots,Fouls,Goals Per Match,Goals Conceded Per Match,Corners Per Match,Cards Per Match
 0,Arsenal,2020/2021,England,13,7,6,4,2,2,2,7,1.08,15,15,11,16,6,5,137,115,0.85,1.23,5.75,1.92
 1,Tottenham Hotspur,2020/2021,England,13,6,7,7,3,4,4,2,1.92,2,2,25,12,10,15,146,148,1.92,0.92,4.33,1.23
 2,Manchester City,2020/2021,England,12,6,6,5,3,2,5,2,1.67,9,9,18,12,12,6,205,122,1.5,1,6.83,1.42
