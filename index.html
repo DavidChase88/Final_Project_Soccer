@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Predicting Champions of European Soccer Leagues</title>
+    <style>
+      .img-container {
+        text-align: center;
+        display: block;
+      }
+    </style>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -11,16 +17,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="static/css/style.css">
-
 </head>
 <body class="bg-dark">
-    <div class="wrapper">
-        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-            <a class="navbar-brand" href="index.html">Predicting Champions of European Soccer Leagues</a>
-        </nav>
-    </div>
     <div class="jumbotron">
-        <h1 class="display-4">Predicting Champions of European Soccer Leagues</h1>
+        <h1 class="display-4">Predicting European Champions League Participants</h1>
     </div>
     <div class="container-fluid">
         <div class="row">
@@ -32,28 +32,34 @@
             <h3> Analysis Summary</h3>
             <p>
               This would provide summary of the data analysis and reference our findings below. The number of Data Visuals would be determined by the data analysis. For this storyboard we just are keeping it at 2<br><br>More analysis <br>
-
-
             </p>
           </div>
         </div>
     </div>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="static/images/Visual_1.jpg" alt="" align: center>
+      </div>
+      <div class="col-md-6">
+        <img src="static/images/Visual_2.jpg" alt="">
+      </div>
+    </div>    
     <div class="container-fluid">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-4">
             <form class="bg-dark">
                 <p>Filter Search</p>
                 <ul class="bg-dark">
                     <li class="bg-dark">
                         <label for="date">Enter Team</label>
-                        <input type="text" placeholder="Manchester United" id="team_name" />
+                        <input type="text" placeholder="AC Milan" id="team_name" />
                     </li>
                     <li class="bg-dark">
                         <label for="date">Enter Season</label>
                         <input type="number" placeholder="2020" id="season" />
                     </li>
                     <li class="bg-dark">
-                        <label for="date">Predicted to be in Champions League</label>
+                        <label for="date">Champions League</label>
                         <input type="text" placeholder="Yes" id="champions_league_prediction" />
                     </li>
                     <li class="bg-dark">
@@ -64,66 +70,23 @@
                         <label for="date">Home Wins</label>
                         <input type="text" placeholder="3" id="wins_home" />
                     </li>
+                    <li class="bg-dark">
+                      <label for="date">% Score First</label>
+                      <input type="text" placeholder="3" id="first_team_to_score_percentage" />
+                  </li>
                 </ul>
             </form>
           </div>
-          <div class="col-md-9">
+          <div class="col-md-8">
             <table class="table table-striped">
                 <thead>
                   <tr>
-                    <th>Enter Team</th>
-                    <th>Enter Season</th>
-                    <th>Predicted to be in Champions League</th>
+                    <th>Team</th>
+                    <th>Season</th>
+                    <th>Champions League</th>
                     <th>Goals Per Match</th>
                     <th>Home Wins</th>
-                  </tr>
-                </thead>
-                <tbody></tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-3">
-          <form class="bg-dark">
-              <p>Filter Search</p>
-              <ul class="bg-dark">
-                  <li class="bg-dark">
-                      <label for="date">Enter Country</label>
-                      <input type="text" placeholder="1/10/2010" id="datetime" />
-                  </li>
-                  <li class="bg-dark">
-                      <label for="date">Enter Team</label>
-                      <input type="text" placeholder="benton" id="city" />
-                  </li>
-                  <li class="bg-dark">
-                      <label for="date">Enter State</label>
-                      <input type="text" placeholder="ar" id="state" />
-                  </li>
-                  <li class="bg-dark">
-                      <label for="date">Enter Country</label>
-                      <input type="text" placeholder="us" id="country" />
-                  </li>
-                  <li class="bg-dark">
-                      <label for="date">Enter Shape</label>
-                      <input type="text" placeholder="circle" id="shape" />
-                  </li>
-              </ul>
-          </form>
-          </div>
-          <div class="col-md-9">
-            <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th>Date</th>
-                    <th>City</th>
-                    <th>State</th>
-                    <th>Country</th>
-                    <th>Shape</th>
-                    <th>Duration</th>
-                    <th>Comments</th>
+                    <th>% Score First</th>
                   </tr>
                 </thead>
                 <tbody></tbody>
