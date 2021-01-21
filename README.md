@@ -14,3 +14,6 @@
 
 Our team is just using Slack to set up times to meet and share data. We will probably use Github to upload individual data as well.
 
+## Link to Presentation
+https://docs.google.com/presentation/d/e/2PACX-1vQRruh-m9kNB1rHGn77rQCZFr94-E452VYQV4nHXOvHptZf6ps6MCu7h3vmdO2YcIn01SZ1WTyfJwjM/pub?start=false&loop=false&delayms=3000
+
