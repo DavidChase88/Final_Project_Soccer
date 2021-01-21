@@ -26,12 +26,12 @@
         <div class="row">
           <div class="col-md-6">
             <h3>Project Scope</h3> 
-            <p> We Choose to analyze the 5 largest European Leagues in soccer: La Liga, Premier League, Serie A, Bundesliga, and Ligue 1. We extracted data from footystats.org from the last 10 years. We hoped to that this data could help predict future league winners. After running multiple regression models and machine learning models with this data we found 30 of 190 inputs for each team every season were significant factors in determining the eventual league champion.</p></h3>
+            <p> We Choose to analyze the 5 largest European Leagues in soccer: La Liga, Premier League, Serie A, Bundesliga, and Ligue 1. We extracted team-level statistics in these 5 leagues for every season going back to 2010-2011 from footystats.org. We used this data to try to understand which performance categories were the best predictors of Champions League qualification, and then used what we learned to try and predict which teams would qualify in the current season. After running multiple regression models and machine learning models with this data, we found that about 30 of the original 190 inputs in our data played a significant role in determining Champions League qualification.</p></h3>
           </div>
           <div class="col-md-6">
             <h3> Analysis Summary</h3>
             <p>
-              This would provide summary of the data analysis and reference our findings below. The number of Data Visuals would be determined by the data analysis. For this storyboard we just are keeping it at 2<br><br>More analysis <br>
+              Based on the 30 fields we identified, we ran our model on the YTD 2020-21 data for the same 5 leagues to predict which teams were most likely to qualify for the Champions League.  We also analyzed the features as well as their relative importance to draw conclusions about what characteristics drove on-field success. Most of the features the model deemed important are offensive in nature Goals per Match, First Team to Score, Failed to Score, etc), leading us to conclude that having a good attack is more important to team success than having a good defense. <br>
             </p>
           </div>
         </div>
@@ -46,44 +46,49 @@
     </div>    
     <div class="container-fluid">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-3">
             <form class="bg-dark">
                 <p>Filter Search</p>
                 <ul class="bg-dark">
                     <li class="bg-dark">
-                        <label for="date">Enter Team</label>
+                        <label for="text">Enter Team</label>
                         <input type="text" placeholder="AC Milan" id="team_name" />
                     </li>
                     <li class="bg-dark">
                         <label for="date">Enter Season</label>
-                        <input type="number" placeholder="2020" id="season" />
+                        <input type="text" placeholder="2020" id="season" />
                     </li>
                     <li class="bg-dark">
                         <label for="date">Champions League</label>
                         <input type="text" placeholder="Yes" id="champions_league_prediction" />
                     </li>
                     <li class="bg-dark">
+                      <label for="date">Enter Country</label>
+                      <input type="text" placeholder="England" id="country" />
+                    </li>
+                    <li class="bg-dark">
                         <label for="date">Goals Per Match</label>
-                        <input type="number" placeholder="2.5" id="average_total_goals_per_match" />
+                        <input type="text" placeholder="2.5" id="average_total_goals_per_match" />
                     </li>
                     <li class="bg-dark">
                         <label for="date">Home Wins</label>
                         <input type="text" placeholder="3" id="wins_home" />
                     </li>
                     <li class="bg-dark">
-                      <label for="date">% Score First</label>
+                      <label for="text">% Score First</label>
                       <input type="text" placeholder="3" id="first_team_to_score_percentage" />
-                  </li>
+                    </li>
                 </ul>
             </form>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-9">
             <table class="table table-striped">
                 <thead>
                   <tr>
                     <th>Team</th>
                     <th>Season</th>
                     <th>Champions League</th>
+                    <th>Country</th>
                     <th>Goals Per Match</th>
                     <th>Home Wins</th>
                     <th>% Score First</th>
